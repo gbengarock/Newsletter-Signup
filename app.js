@@ -60,5 +60,3 @@ app.listen(process.env.PORT || 3000, function(){
   console.log('welcome, we are live on port 3000!');
 })
 
-// d119dd171880a826f2d463cd512a1529-us12
-// b8a46a1f3b
