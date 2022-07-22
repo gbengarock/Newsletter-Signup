@@ -1,0 +1,106 @@
+html,
+body {
+height: 100%;
+}
+
+.sign-up-form {
+display: -ms-flexbox;
+display: -webkit-box;
+display: flex;
+-ms-flex-align: center;
+-ms-flex-pack: center;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+padding-top: 40px;
+padding-bottom: 40px;
+background-color: #f5f5f5;
+}
+
+.form-signin {
+width: 100%;
+max-width: 400px;
+padding: 15px;
+margin: 0 auto;
+}
+.form-signin .form-control {
+position: relative;
+box-sizing: border-box;
+height: auto;
+padding: 10px;
+font-size: 16px;
+}
+.form-signin .form-control:focus {
+z-index: 2;
+}
+.top[type="text"] {
+margin-bottom: -1px;
+border-bottom-right-radius: 0;
+border-bottom-left-radius: 0;
+}
+.middle[type="text"] {
+border-radius: 0;
+border-bottom: 0;
+}
+.bottom[type="email"] {
+margin-bottom: 10px;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+}
+button {
+    width: 100%;
+}
+#card {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  #upper-side {
+    padding: 2em;
+    background-color: #8BC34A;
+    display: block;
+    color: #fff;
+  }
+  #checkmark {
+    font-weight: lighter;
+    fill: #fff;
+    margin: -3.5em auto auto 5em;
+  }
+  #status {
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1em;
+    margin-top: -.2em;
+    margin-bottom: 0;
+  }
+  #lower-side {
+    padding: 2em 2em 5em 2em;
+    background: #fff;
+    display: block;
+  }
+  #message {
+    margin-top: -.5em;
+    color: #757575;
+    letter-spacing: 1px;
+    font-size: 36px;
+  }
+  #contBtn {
+    position: relative;
+    top: 1.5em;
+    text-decoration: none;
+    background: #8bc34a;
+    color: #fff;
+    margin: auto;
+    padding: .8em 3em;
+    border-radius: 8px;
+  }
+  #contBtn:hover {
+    background: #fff;
+    color: #8bc34a;
+    border: 2px #8bc34a solid;
+    margin: auto;
+    padding: 1.2em 3.5em;
+    border-radius: 8px;
+  }

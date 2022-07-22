@@ -2,14 +2,17 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
-const https = require('https')
+const https = require('https');
+const ejs = require('ejs');
 
 
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
+app.set('view engine', 'ejs');
+app.use(express.static('public'));
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/signup.html');
+  res.render('signup');
 })
 
 app.post('/', function(req, res){
@@ -39,9 +42,9 @@ const options = {
 
 const request = https.request(url, options, function(response){
   if (response.statusCode === 200){
-    res.sendFile(__dirname + '/success.html');
+    res.render('success', {userName: req.body.fName} );
   } else {
-    res.sendFile(__dirname + '/failure.html');
+    res.render('failure');
   }
   response.on('data', function(data){
     console.log(JSON.parse(data));
@@ -60,6 +63,6 @@ app.post('/success', function(req, res){
   res.redirect('/');
 })
 
-app.listen(process.env.PORT || 3000, function(){
-  console.log('welcome, we are live on port 3000!');
+app.listen(process.env.PORT || 3002, function(){
+  console.log('welcome, we are live on port 3002!');
 })
