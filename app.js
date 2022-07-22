@@ -62,7 +62,10 @@ app.post('/failure', function(req, res){
 app.post('/success', function(req, res){
   res.redirect('/');
 })
+<<<<<<< HEAD
 
 app.listen(process.env.PORT || 3002, function(){
   console.log('welcome, we are live on port 3002!');
 })
+=======
+>>>>>>> e5c301dc34545a57bfb04b2811abe1a027e170c4
